@@ -5,10 +5,10 @@ import Card from "../../card";
 const Journey = () => {
   return (
     <div>
-      <h2 className="heading-2 mt-[40px] md:mb-3">
+      <h2 className="heading-2 mb-3">
         Your Journey to Relocating Made Simple
       </h2>
-      <p className="heading-2-paragragh md:w-5/12 md:px-7 md:mx-auto">
+      <p className="heading-2-paragragh md:w-5/12 w-11/12 md:px-7 mx-auto ">
         We’ve streamlined the entire process so you can focus on what matters
         most achieving your goals abroad
       </p>

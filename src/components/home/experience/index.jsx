@@ -6,8 +6,8 @@ const Experience = () => {
     <div className="bg-[#F9F2F8] py-[60px]">
       <div className="md:flex md:px-[60px] ">
         <div className="md:w-[70%] ">
-          <h2 className="heading-2 md:text-start md:mb-3">Our Experience </h2>
-          <p className="heading-2-paragragh md:text-start md:w-[65%] md:pr-7">
+          <h2 className="heading-2 md:text-start mb-3">Our Experience </h2>
+          <p className="heading-2-paragragh md:text-start w-11/12 mx-auto md:mx-0 md:w-[65%] md:pr-7">
             since inception we have always prioritize the convenience of our
             clients by providing low prices and easy processes
           </p>
