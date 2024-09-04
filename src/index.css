@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.heading-1{
+    @apply font-[700] text-[32px] md:text-[46px] leading-[30px] md:leading-[50px] text-[#28282B] text-center
+}
+.heading-2{
+    @apply font-[700] text-[24px] md:text-[32px] leading-[26.4px] md:leading-[35.2px] text-center text-[#28282B]
+}
+.heading-paragraph{
+    @apply font-[400] text-[14px]  md:text-[16px] leading-[20px] md:leading-[25.2px] text-[#28282B] text-center
+}
+.heading-2-paragragh{
+    @apply font-[700] md:font-[400] text-[16px] md:leading-[20px] leading-[25.2px] text-center text-[#28282BCC]
+}
+.btn-colored{
+    @apply rounded-[8px] bg-[#962985] border border-[#4F4F4F] py-[6px] px-[4px] font-[600] text-[16px] text-[#FBECDC] h-[40px] 
+}
+.btn-plain{
+    @apply rounded-[8px] bg-transparent border border-[#962985] py-[6px] px-[4px] font-[600] text-[16px] text-[#962985] h-[40px] 
+}
