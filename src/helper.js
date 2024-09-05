@@ -20,10 +20,16 @@ import {default as TestimonialImage6} from "./assets/testimonial-image-6.svg"
 import {default as TestimonialImage7} from "./assets/testimonial-image-7.svg"
 import {default as TestimonialImage8} from "./assets/testimonial-image-8.svg"
 import {default as TestimonialImage9} from "./assets/testimonial-image-9.svg"
+import {default as Mission1} from "./assets/mission1.svg"
+import {default as Mission2} from "./assets/mission2.svg"
+import {default as AboutHero} from "./assets/about-hero.svg"
 
 
 
 export default {
+    AboutHero,
+    Mission1,
+    Mission2,
     ArrowWhite,
     TestimonialImage1,
     TestimonialImage2,

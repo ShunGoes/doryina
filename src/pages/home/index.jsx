@@ -4,16 +4,15 @@ import Journey from "../../components/home/journey";
 import Testimonial from "../../components/home/testimonial";
 import Navbar from "../../components/navbar";
 import SubFooter from "../../components/subfooter";
-import "./style.css"
+import "./style.css";
 
 const HomePage = () => {
   return (
     <main className="relative">
       <div className="header md:mb-[70px]">
         <div className="header-gradient">
-        <Navbar />
-        <HomeHero />
-
+          <Navbar bgColor="#FFD8F9CC" />
+          <HomeHero />
         </div>
       </div>
       <Journey />

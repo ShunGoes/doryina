@@ -14,13 +14,16 @@ p{
 
 
 .heading-1{
-    @apply font-[700] text-[32px] md:text-[46px] leading-[30px] md:leading-[50px] text-[#28282B] text-center
+    @apply font-[700] text-[32px] md:text-[46px] leading-[30px] md:leading-[50px]  text-center
 }
 .heading-2{
     @apply font-[700] text-[24px] md:text-[32px] leading-[26.4px] md:leading-[35.2px] text-center text-[#28282B]
 }
+.heading-3{
+    @apply font-[700] text-[26px] leading-[22px] text-[#333333]
+}
 .heading-paragraph{
-    @apply font-[400] text-[14px]  md:text-[16px] leading-[20px] md:leading-[25.2px] text-[#28282B] text-center
+    @apply font-[400] text-[14px]  md:text-[16px] leading-[20px] md:leading-[25.2px]  text-center
 }
 .heading-2-paragragh{
     @apply font-[700] md:font-[400] text-[16px] md:leading-[20px] leading-[25.2px] text-center text-[#28282BCC]
