@@ -5,6 +5,7 @@ import "./style.css"
 
 const Navbar = () => {
   let location = useLocation() 
+  console.log(location.pathname)
   let bgColor;
 
   if( location.pathname === "/" ){
