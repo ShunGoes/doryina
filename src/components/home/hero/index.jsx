@@ -4,7 +4,7 @@ import helper from "../../../helper"
 const HomeHero = () => {
     
   return (
-    <section className="h-[90vh] md:h-auto w-full header ">
+    <section className="h-[90vh] md:h-auto w-full header border-4 border-red-500 ">
         <header className="header-gradient h-full flex flex-col  gap-[20px]">
             <div className="h-[40px] md:h-[120px]"/>
             <h1 className="heading-1 md:w-7/12 md:mx-auto px-[10px]">Seamless <span className="text-[#962985]">Pathways </span> to Study Work and <span className="text-[#962985]"> Live Abroad </span> </h1>
@@ -13,7 +13,7 @@ const HomeHero = () => {
                 <button className="btn-colored w-7/12">Book a consultation</button>
                 <button className="btn-plain w-5/12">Learn More</button>
             </div>
-            <div className="  mt-[50px] md:mt-[30px] md:w-[70%] md:mx-auto ">
+            <div className="  mt-[50px] md:mt-[30px] md:w-[70%] w-11/12 mx-auto ">
                 <img src={helper.HeaderPeople} alt="people smiling"  className="w-full h-full object-cover"/>
             </div>
         </header>
