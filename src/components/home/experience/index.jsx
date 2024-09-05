@@ -44,8 +44,8 @@ const Experience = () => {
           </div>
         </div>
         {/* parallax image */}
-        <div className="mt-[60px] md:my-0 mb-[30px] ">
-          <img src={helper.ParallaxGirl} alt="girl smiling" className="border-4 border-red-500"/>
+        <div className="mt-[60px] md:my-0 mb-[30px] flex justify-center  ">
+          <img src={helper.ParallaxGirl} alt="girl smiling" className=""/>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import helper from "../../../helper"
 const HomeHero = () => {
     
   return (
-    <section className=" h-auto mb-[40px] md:mb-0 w-full header  ">
+    <section className=" h-auto mb-[60px] md:mb-0 w-full header  ">
         <header className="header-gradient h-full flex flex-col  gap-[20px]">
             <div className="h-[40px] md:h-[120px]"/>
             <h1 className="heading-1 md:w-7/12 md:mx-auto px-[10px]">Seamless <span className="text-[#962985]">Pathways </span> to Study Work and <span className="text-[#962985]"> Live Abroad </span> </h1>
