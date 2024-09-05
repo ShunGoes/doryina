@@ -5,14 +5,14 @@ const Experience = () => {
   return (
     <div className="bg-[#F9F2F8] py-[60px]">
       <div className="md:flex md:px-[60px] ">
-        <div className="md:w-[70%] border-4 border-red-500">
+        <div className="md:w-[70%] ">
           <h2 className="heading-2 md:text-start mb-3">Our Experience </h2>
           <p className="heading-2-paragragh md:text-start w-11/12 mx-auto md:mx-0 md:w-[65%] md:pr-7">
             since inception we have always prioritize the convenience of our
             clients by providing low prices and easy processes
           </p>
-          <div className="grid grid-cols-3 place-items-center justify-between gap-[20px] w-10/12 md:w-[50%] md:mx-0 mx-auto border-4 border-red-500  mt-[50px]">
-            <div className="h-[90px] border-4 border-red-500">
+          <div className="grid grid-cols-3 place-items-center justify-between gap-[20px] w-10/12 md:w-[45%] md:mx-0 mx-auto   mt-[50px]">
+            <div className="h-[90px] ">
               <h4 className="font-[700] text-[32px] leading-[35.2px] text-[#962985] mb-3">
                 10
               </h4>
@@ -20,7 +20,7 @@ const Experience = () => {
                 Years Experience
               </p>
             </div>
-            <div className="h-[90px] border-4 border-red-500">
+            <div className="h-[90px] ">
               <h4 className="font-[700] text-[32px] leading-[35.2px] text-[#962985] mb-3">
                 100+
               </h4>
@@ -28,7 +28,7 @@ const Experience = () => {
                 Destination Collaboration
               </p>
             </div>
-            <div className="h-[90px] border-4 border-red-500">
+            <div className="h-[90px] ">
               <h4 className="font-[700] text-[32px] leading-[35.2px] text-[#962985] mb-3">
                 50+
               </h4>
