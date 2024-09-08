@@ -1,17 +1,24 @@
 import { Testimoonials } from "../../../../component-data";
 import helper from "../../../helper";
 import TestimonialCard from "../../testimonial-card";
+import { useLocation } from "react-router-dom";
 
 import "./style.css";
 
 const Testimonial = () => {
+  const location = useLocation()
+  let hideSection = false
+
+  if(location.pathname === "/about"){
+    hideSection = true
+  }
   return (
     <div className="my-[60px]">
-      <div className="md:h-[90vh] ">
+      <div className={` ${hideSection ? "h-auto": "md:h-[90vh]"} `}>
         <h2 className="heading-2 mb-5 md:mb-[40px] ">
           Trusted by Thousands for a New Beginning
         </h2>
-        <div className="md:flex md:w-[90%] md:mx-auto gap-[60px] md:h-[80%] items-center">
+        <div className={`  ${hideSection ? "hidden" : "md:flex md:h-[80%] items-center md:w-[90%] md:mx-auto gap-[60px]"} `}>
           <div className="w-11/12 md:h-full md:flex items-center  mx-auto md:mx-0 md:w-[50%]">
             <img
               src={helper.TestimonialImage}

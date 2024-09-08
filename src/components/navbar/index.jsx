@@ -5,17 +5,17 @@ import "./style.css"
 
 const Navbar = () => {
   let location = useLocation() 
-  console.log(location.pathname)
+
   let bgColor;
 
   if( location.pathname === "/" ){
-    bgColor = "bg-[#FFD8F9CC]"
+    bgColor = "md:bg-[#FFD8F9CC]"
   } else {
-    bgColor = "bg-white"
+    bgColor = "md:bg-white"
   }
 
   return (
-    <nav className={`w-full bg-transparent md:w-9/12 lg:mx-auto md:rounded-[40px] md:backdrop-blur-md md:${bgColor} md:h-[60px] md:fixed md:right-0 md:left-0 md:top-[30px]  nav-shadow z-[999]`}>
+    <nav className={`w-full bg-transparent md:w-9/12 lg:mx-auto md:rounded-[40px] md:backdrop-blur-md ${bgColor} md:h-[60px] md:fixed md:right-0 md:left-0 md:top-[30px]  nav-shadow z-[999]`}>
         <div className="w-[95%] mx-auto h-[70px]  flex justify-between items-center md:h-full md:w-[90%] ">
             <Link to="/" className="h-full w-4/12 md:w-auto py-2 md:flex md:items-center " >
                 <img src={helper.Logo} alt="dorinya logo" className=" h-full md:h-[70%]"/>
