@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Experience from "../../components/home/experience";
 import HomeHero from "../../components/home/hero";
 import Journey from "../../components/home/journey";
@@ -11,7 +12,7 @@ const HomePage = () => {
     <main className="relative">
       <div className="header md:mb-[70px]">
         <div className="header-gradient">
-          <Navbar bgColor="#FFD8F9CC" />
+          <Navbar  />
           <HomeHero />
         </div>
       </div>
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Experience />
       <Testimonial />
       <SubFooter />
+      <Footer />
     </main>
   );
 };

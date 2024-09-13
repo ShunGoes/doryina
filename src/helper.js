@@ -23,10 +23,42 @@ import {default as TestimonialImage9} from "./assets/testimonial-image-9.svg"
 import {default as Mission1} from "./assets/mission1.svg"
 import {default as Mission2} from "./assets/mission2.svg"
 import {default as AboutHero} from "./assets/about-hero.svg"
+import {default as PackagesHero} from "./assets/package-hero.svg"
+import {default as Tailor1} from "./assets/tailor1.svg"
+import {default as Tailor2} from "./assets/tailor2.svg"
+import {default as Tailor3} from "./assets/tailor3.svg"
+import {default as InputProfile} from "./assets/input-profile.svg"
+import {default as InputMessage} from "./assets/input-message.svg"
+import {default as InputPhone} from "./assets/input-phone.svg"
+import {default as Dorinya} from "./assets/dorinya.svg"
+import {default as FooterLocation} from "./assets/footer-location.svg"
+import {default as FooterMessage} from "./assets/footer-message.svg"
+import {default as FooterPhone} from "./assets/footer-phone.svg"
+import {default as FooterFb} from "./assets/footer-fb.svg"
+import {default as FooterX} from "./assets/footer-x.svg"
+import {default as FooterIg} from "./assets/footer-ig.svg"
+import {default as FooterLinkedIn} from "./assets/footer-linkedin.svg"
+import {default as FooterGoogle} from "./assets/footer-google.svg"
 
 
 
 export default {
+    FooterFb,
+    FooterGoogle,
+    FooterLinkedIn,
+    FooterIg,
+    FooterX,
+    FooterPhone,
+    FooterMessage,
+    FooterLocation,
+    Dorinya,
+    InputMessage,
+    InputPhone,
+    InputProfile,
+    Tailor3,
+    Tailor2,
+    Tailor1,
+    PackagesHero,
     AboutHero,
     Mission1,
     Mission2,

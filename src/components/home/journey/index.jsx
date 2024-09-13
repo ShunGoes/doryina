@@ -2,16 +2,28 @@ import { JourneyData } from "../../../../component-data";
 import helper from "../../../helper";
 import Card from "../../card";
 
+import { motion } from "framer-motion";
+
 const Journey = () => {
   return (
     <div>
-      <h2 className="heading-2 mb-3">
+      <motion.h2
+        initial={{opacity: 0,  scale: 0.3}}
+        whileInView={{opacity: 1,   scale: 1 }}
+        transition={{delay: 1, duration: 1, type: "spring", bounce: 0.6}}
+        viewport={{ once: true }} 
+        className="heading-2 mb-3">
         Your Journey to Relocating Made Simple
-      </h2>
-      <p className="heading-2-paragragh md:w-5/12 w-11/12 md:px-7 mx-auto ">
+      </motion.h2>
+      <motion.p
+        initial={{opacity: 0,  scale: 0.3}}
+        whileInView={{opacity: 1,   scale: 1 }}
+        transition={{delay: 1.5, duration: 1, type: "spring", bounce: 0.6}}
+        viewport={{ once: true }} 
+        className="heading-2-paragragh md:w-5/12 w-11/12 md:px-7 mx-auto ">
         We’ve streamlined the entire process so you can focus on what matters
         most achieving your goals abroad
-      </p>
+      </motion.p>
 
       <div className="mt-[3rem] md:flex  justify-center gap-[40px] md:w-11/12 md:mx-auto">
         {JourneyData.map((journey) => (
