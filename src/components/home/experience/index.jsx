@@ -7,7 +7,7 @@ import helper from "@/helper";
 
 const Experience = () => {
   const carousel1 = [helper.Experience1, helper.Experience2, helper.Experience3]
-  const carousel2 = [helper.Experience4, helper.Experience5, helper.Experience5]
+  const carousel2 = [helper.Experience4, helper.Experience5, helper.Experience6]
   const carousel3 = [helper.Experience7, helper.Experience8, helper.Experience9]
 
   const settings = {
