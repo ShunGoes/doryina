@@ -1,3 +1,4 @@
+import Footer from "@/components/footer"
 import AboutHero from "../../components/about/about-home"
 import Mission from "../../components/about/mission"
 import Team from "../../components/about/team"
@@ -14,6 +15,7 @@ const AboutPage = () => {
         <Team />
         <Testimonial />
         <SubFooter />
+        <Footer />
     </main>
   )
 }

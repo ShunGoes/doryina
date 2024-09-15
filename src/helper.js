@@ -48,11 +48,13 @@ import {default as Experience6} from "./assets/experience-6.svg"
 import {default as Experience7} from "./assets/experience-7.svg"
 import {default as Experience8} from "./assets/experience-8.svg"
 import {default as Experience9} from "./assets/experience-9.svg"
+import {default as Cancel} from "./assets/cancel.svg"
 
 
 
 
 export default {
+    Cancel,
     Experience9,
     Experience8,
     Experience7,

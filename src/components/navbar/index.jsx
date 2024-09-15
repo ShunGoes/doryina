@@ -3,10 +3,18 @@ import helper from "../../helper";
 import "./style.css";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useClickAway } from "react-use";
 
 const Navbar = () => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+
+  const menuRef = useRef(null);
+
+  // useClickAway(menuRef, (event) => {
+  //   console.log(event.target)
+  //   setShowHamburgerMenu(false);
+  // });
 
   const appLinks = [
     {
@@ -32,6 +40,7 @@ const Navbar = () => {
   } else {
     bgColor = "md:bg-white";
   }
+console.log(showHamburgerMenu);
 
   return (
     <motion.nav
@@ -53,10 +62,14 @@ const Navbar = () => {
           />
         </Link>
         <div
-          onClick={() => setShowHamburgerMenu(!showHamburgerMenu)}
+          
           className=" md:hidden"
         >
-          <img src={helper.Hamburger} alt="hamburger menu" />
+          {
+            showHamburgerMenu ? 
+            <img src={helper.Cancel} alt="cancel button" onClick={() => setShowHamburgerMenu(false)} /> : 
+          <img src={helper.Hamburger} alt="hamburger menu" onClick={() => setShowHamburgerMenu(true)} />
+          }
         </div>
         <div className="hidden md:flex gap-4 ">
           <Link to="/about" className="">
@@ -81,30 +94,39 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+  
       <AnimatePresence>
         {showHamburgerMenu && (
           <motion.div
+          ref={menuRef}
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
-            transition={{ when: "beforeChildren", staggerChildren: 0.3}}
+            transition={{ when: "beforeChildren", staggerChildren: 0.3 }}
             className="absolute top-[80px] bg-[#EBD6E8] backdrop-blur-sm right-3  py-[60px] rounded-[10px] overflow-hidden w-[70%] border-2 border-[#300D2B]"
           >
             <div className="h-full flex flex-col justify-center items-center  w-full">
               {appLinks.map((links, idx) => (
-                <Link to={links.to}>
+                <Link to={links.to} key={idx}>
                   <motion.div
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{delay: idx * 0.5, type:"spring", bounce: 0.5}}
-                  className="text-[20px] text-[#28282BE5] font-[600] text-center h-[50px] flex items-center justify-center  "
-                  >{links.name}</motion.div>
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      delay: idx * 0.5,
+                      type: "spring",
+                      bounce: 0.5,
+                    }}
+                    className="text-[20px] text-[#28282BE5] font-[600] text-center h-[50px] flex items-center justify-center  "
+                  >
+                    {links.name}
+                  </motion.div>
                 </Link>
               ))}
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+
     </motion.nav>
   );
 };
