@@ -2,31 +2,86 @@ import { Testimoonials } from "../../../../component-data";
 import helper from "../../../helper";
 import TestimonialCard from "../../testimonial-card";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "./style.css";
+import Slider from "react-slick/lib/slider";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonial = () => {
-  const location = useLocation()
-  let hideSection = false
+  const location = useLocation();
+  let hideSection = false;
 
-  if(location.pathname === "/about"){
-    hideSection = true
+  if (location.pathname === "/about") {
+    hideSection = true;
   }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
-    <div className="my-[60px]">
-      <div className={` ${hideSection ? "h-auto": "md:h-[90vh]"} `}>
-        <h2 className="heading-2 mb-5 md:mb-[40px] ">
+    <div className="my-[60px]   overflow-hidden ">
+      <div className={` ${hideSection ? "h-auto" : "md:h-[90vh]"} `}>
+        <motion.h2
+           initial={{opacity: 0,  scale: 0.5}}
+           whileInView={{opacity: 1,   scale: 1 }}
+           transition={{delay: 2, duration: 1, type: "spring", bounce: 0.6}}
+           viewport={{ once: true }} 
+          className="heading-2 mb-5 md:mb-[40px] ">
           Trusted by Thousands for a New Beginning
-        </h2>
-        <div className={`  ${hideSection ? "hidden" : "md:flex md:h-[80%] items-center md:w-[90%] md:mx-auto gap-[60px]"} `}>
-          <div className="w-11/12 md:h-full md:flex items-center  mx-auto md:mx-0 md:w-[50%]">
+        </motion.h2>
+        <div
+          className={`  ${
+            hideSection
+              ? "hidden"
+              : "md:flex md:h-[80%] items-center md:w-[90%] md:mx-auto gap-[60px]"
+          } `}
+        >
+          <motion.div
+            initial={{opacity: 0,  x: -100}}
+            whileInView={{opacity: 1,   x: 0 }}
+            transition={{delay: 1, duration: 1, type: "spring", bounce: 0.6}}
+            viewport={{ once: true }} 
+            className="w-11/12 md:h-full md:flex items-center  mx-auto md:mx-0 md:w-[50%]">
             <img
               src={helper.TestimonialImage}
               alt="images for testimonial"
               className="w-full md:object-cover"
             />
-          </div>
-          <div className="md:w-[50%]">
+          </motion.div>
+          <motion.div
+             initial={{opacity: 0,  x: 100}}
+             whileInView={{opacity: 1,   x: 0 }}
+             transition={{delay: 1.3, duration: 1, type: "spring", bounce: 0.6}}
+             viewport={{ once: true }} 
+            className="md:w-[50%]">
             <h2 className="heading-2 mt-[30px] md:text-start mb-3">
               Real Stories, Real Success
             </h2>
@@ -36,14 +91,18 @@ const Testimonial = () => {
               their dreams into reality with our seamless support. These stories
               showcase the transformative journeys we’ve made possible.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-
-      <div className="pl-[20px]  mt-[40px] flex gap-[20px] md:gap-[30px] py-[20px] overflow-x-auto  scroll-smooth testimonial">
-        {Testimoonials.map((testimony) => (
-          <TestimonialCard key={testimony.id} {...testimony} />
-        ))}
+      <div className="h-[70vh] md:h-[100vh]">
+        <Slider
+          {...settings}
+          className="pl-[20px]  mt-[40px] w-full "
+        >
+          {Testimoonials.map((testimony) => (
+            <TestimonialCard key={testimony.id} {...testimony} />
+          ))}
+        </Slider>
       </div>
     </div>
   );

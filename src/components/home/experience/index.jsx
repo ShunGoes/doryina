@@ -1,28 +1,43 @@
-import useMeasure from "react-use-measure";
-import {animate, motion, useMotionValue} from "framer-motion"
-import { useEffect } from "react";
-
-
+import {motion} from "framer-motion"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import helper from "@/helper";
 
 
 const Experience = () => {
-  const [ref, {height}] = useMeasure()
-  
-  const yTranslation = useMotionValue(0)
+  const carousel1 = [helper.Experience1, helper.Experience2, helper.Experience3]
+  const carousel2 = [helper.Experience4, helper.Experience5, helper.Experience6]
+  const carousel3 = [helper.Experience7, helper.Experience8, helper.Experience9]
 
-  useEffect(() => {
-    const finalPosition = -height
-  let controls = animate(yTranslation, [0, finalPosition], {
-    ease: "linear",
-    duration: 5,
-    repeat: Infinity,
-    repeatType: "loop",
-    repeatDelay: 0
-  })
-    
-  return controls.stop
-  }, [yTranslation, height])
-  
+  const settings = {
+    dots: false,
+    vertical: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+  };
+  const settings2 = {
+    dots: false,
+    vertical: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+  };
+
+  const bacgroundImage = {
+    backgroundImage: "linear-gradient(180deg, #F9F2F8, transparent)"
+  }
 
   return (
     <div className="bg-[#F9F2F8] py-[60px]">
@@ -81,27 +96,38 @@ const Experience = () => {
           </div>
         </div>
         {/* parallax image */}
-        <div className="mt-[60px] md:my-0 mb-[30px]  md:w-[50%] flex justify-center relative border-4 border-red-500 overflow-hidden" >
-          <motion.div ref={ref} style={{y:yTranslation}}>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-blue-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-              <div  className="size-[200px] border-4 border-red-500 flex gap-[10px]"/>
-          </motion.div>
+        <div className="mt-[60px] md:my-0 mb-[30px] rounded-[20px]  md:w-[50%] relative flex justify-between overflow-hidden" >
+          <Slider {...settings}  className=" w-[30%] h-full ">
+            {
+              [...carousel1,...carousel1].map((picture,idx) => (
+              <div key={idx}  className="w-[200px] h-[150px]  flex gap-[10px]" >
+                <img src={picture} alt="people happy" className="w-full h-full object-cover" />
+              </div>
+
+              ))
+            }
+          </Slider>
+          <Slider {...settings2}  className=" w-[30%] h-full ">
+            {
+              [...carousel2,...carousel2].map((picture, idx) => (
+              <div key={idx}  className="w-[200px] h-[150px]  flex gap-[10px]" >
+                <img src={picture} alt="people happy" className="w-full h-full object-cover" />
+              </div>
+
+              ))
+            }
+          </Slider>
+          <Slider {...settings}  className=" w-[30%] h-full ">
+            {
+              [...carousel3,...carousel3].map((picture, idx) => (
+              <div key={idx} className="w-[200px] h-[150px]  flex gap-[10px]" >
+                <img src={picture} alt="people happy" className="w-full h-full object-cover" />
+              </div>
+
+              ))
+            }
+          </Slider>
+            <div style={bacgroundImage} className="w-full h-[70px]  absolute -top-0 z-2"/>
         </div>
       </div>
     </div>

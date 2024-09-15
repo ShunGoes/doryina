@@ -4,23 +4,23 @@ const FAQ = () => {
   const faq = [
     {
       question: "What services does Doryina offer?",
-      answer: "",
+      answer: "Doryina specializes in helping individuals relocate abroad through study, tour, and medical assistance packages, including visa processing, flight booking, and accommodation sourcing.",
     },
     {
       question: "How long has Doryina been in business?",
-      answer: "",
+      answer: "Doryina has been providing expert relocation services since 2020, helping numerous clients transition smoothly to their new destinations.",
     },
     {
       question: "Which countries does Doryina operate in?",
-      answer: "",
+      answer: "We assist clients in relocating to various countries, including the US, UK, Canada, and many more, based on the type of service package selected.",
     },
     {
       question: "How can I start my relocation process with Doryina?",
-      answer: "",
+      answer: "You can start by selecting one of our tailored packages and contacting our team for a personalized consultation.",
     },
     {
       question: "Can I get personalized assistance?",
-      answer: "",
+      answer: "Absolutely! Our team offers personalized guidance and support to ensure a smooth and successful relocation experience.",
     },
   ];
   return (
@@ -36,7 +36,9 @@ const FAQ = () => {
 
         <div className="flex flex-col gap-[10px]">
           {faq.map((item) => (
-            <CustomAccordion key={item.question} {...item} />
+            <CustomAccordion key={item.question} question={item.question} >
+              <p className="md:text-[20px] font-[600] md:px-[30px] leading-[30px] text-[#FFFFFF]  ">{item.answer}</p>
+            </CustomAccordion>
           ))}
         </div>
       </div>

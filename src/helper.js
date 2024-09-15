@@ -39,10 +39,28 @@ import {default as FooterX} from "./assets/footer-x.svg"
 import {default as FooterIg} from "./assets/footer-ig.svg"
 import {default as FooterLinkedIn} from "./assets/footer-linkedin.svg"
 import {default as FooterGoogle} from "./assets/footer-google.svg"
+import {default as Experience1} from "./assets/experience-1.svg"
+import {default as Experience2} from "./assets/experience-2.svg"
+import {default as Experience3} from "./assets/experience-3.svg"
+import {default as Experience4} from "./assets/experience-4.svg"
+import {default as Experience5} from "./assets/experience-5.svg"
+import {default as Experience6} from "./assets/experience-6.svg"
+import {default as Experience7} from "./assets/experience-7.svg"
+import {default as Experience8} from "./assets/experience-8.svg"
+import {default as Experience9} from "./assets/experience-9.svg"
 
 
 
 export default {
+    Experience9,
+    Experience8,
+    Experience7,
+    Experience6,
+    Experience5,
+    Experience4,
+    Experience3,
+    Experience2,
+    Experience1,
     FooterFb,
     FooterGoogle,
     FooterLinkedIn,

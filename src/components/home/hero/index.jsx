@@ -2,6 +2,7 @@ import "./styles.css"
 import helper from "../../../helper"
 
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const HomeHero = () => {
     
@@ -27,8 +28,12 @@ const HomeHero = () => {
               transition={{delay: 2, duration: 1, type: "spring", bounce: 0.6}}
               viewport={{ once: true }} 
               className="flex justify-between w-10/12 md:w-3/12 mx-auto  gap-[10px] mt-5">
-                <button className="btn-colored w-7/12">Book a consultation</button>
-                <button className="btn-plain w-5/12">Learn More</button>
+                <Link to="/packages" className="btn-colored w-7/12">
+                  <button className="w-full h-full">Book a consultation</button>
+                </Link>
+                <Link to="/about" className="btn-plain w-5/12">
+                  <button className="w-full h-full">Learn More</button>
+                </Link>
             </motion.div>
             <motion.div 
               initial={{opacity: 0,  scale: 0.3}}
