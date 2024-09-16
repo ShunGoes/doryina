@@ -13,7 +13,7 @@ const ContactHero = () => {
         viewport={{ once: true }}
         className="heading-1 text-white w-11/12 mb-3 mx-auto"
       >
-        Your Trusted Partner in Global Relocation
+        Get in Touch with Doryina
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, scale: 0.3 }}
@@ -22,10 +22,7 @@ const ContactHero = () => {
         viewport={{ once: true }}
         className="heading-paragraph text-[#fff]"
       >
-        At Doryina, we specialize in turning your dreams of moving abroad into
-        reality. With expert guidance, personalized service, and a commitment
-        to your success, we’ve helped countless individuals and families start
-        new chapters in countries around the world className
+        We’re here to help with all your relocation needs. Reach out to us for personalized assistance and expert guidance.
       </motion.p>
     </header>
   </section>
