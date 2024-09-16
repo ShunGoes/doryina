@@ -4,7 +4,8 @@ import HomePage from './pages/home'
 
 import {Routes, Route} from "react-router-dom"
 import Packages from './pages/packages'
-import ScrollToTop from './components/scrolltotop'
+
+import ContactPage from './pages/contact'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/packages' element={<Packages />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
    </div>
   )
