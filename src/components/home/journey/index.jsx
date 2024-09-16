@@ -12,7 +12,7 @@ const Journey = () => {
         whileInView={{opacity: 1,   scale: 1 }}
         transition={{delay: 1, duration: 1, type: "spring", bounce: 0.6}}
         viewport={{ once: true }} 
-        className="heading-2 mb-3">
+        className="heading-2 mb-3 px-[30px]">
         Your Journey to Relocating Made Simple
       </motion.h2>
       <motion.p

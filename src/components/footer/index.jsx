@@ -47,15 +47,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[100px] flex flex-col md:flex-row md:justify-between gap-[30px] w-9/12 mx-auto">
-          <div className="flex justify-between gap-[40px]">
-            <span className="text-[14px] font-[500] leading-[18.23px] text-[#300D2B]">
+        <div className="mt-[100px] flex flex-col md:flex-row md:justify-between gap-[30px] w-10/12 md:w-9/12 mx-auto">
+          <div className="flex justify-between gap-[40px]   ">
+            <span className="text-[14px] font-[500] text-center md:text-start leading-[18.23px] text-[#300D2B]">
               ABOUT US
             </span>
-            <span className="text-[14px] font-[500] leading-[18.23px] text-[#300D2B]">
+            <span className="text-[14px] font-[500] text-center md:text-start leading-[18.23px] text-[#300D2B]">
               CONTACT US
             </span>
-            <span className="text-[14px] font-[500] leading-[18.23px] text-[#300D2B]">
+            <span className="text-[14px] font-[500] text-center md:text-start leading-[18.23px] text-[#300D2B]">
               HELP
             </span>
           </div>

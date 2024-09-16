@@ -28,7 +28,7 @@ const Mission = () => {
             <img src={helper.Mission1} alt="our mission picture" className="w-full md:rounded-[20px] h-full object-cover"/>
           </div>
 
-          <div className="md:w-1/2 md:flex flex-col justify-center md:gap-[30px]">
+          <div className="md:w-1/2 flex flex-col justify-center  gap-[30px]">
             <motion.div
             initial={{opacity: 0,  scale: 0.3}}
             whileInView={{opacity: 1,   scale: 1 }}
@@ -61,7 +61,7 @@ const Mission = () => {
           </div>
         </div>
 
-        <div className="w-full flex justify-center mt-[40px] mx-auto">
+        <div className="w-full flex justify-center mt-0 md:mt-[40px] mx-auto">
           <button className="btn-colored w-5/12 md:w-auto md:px-[20px] ">Contact Us</button>
         </div>
       </div>
