@@ -6,7 +6,7 @@ const Card = ({image, title, text, id}) => {
     <motion.div
     initial={{opacity: 0,  scale: 0.3}}
     whileInView={{opacity: 1,   scale: 1 }}
-    transition={{delay: 1 + id * 0.5, duration: 1, type: "spring", bounce: 0.6}}
+    transition={{delay:  id * 0.5, duration: 1, type: "spring", bounce: 0.6}}
     viewport={{ once: true }} 
       className='w-11/12  mx-auto flex flex-col my-[30px] rounded-[20px] p-3 bg-[#FEEEFB80] shadow shadow-[#96298514]'>
         <div>
