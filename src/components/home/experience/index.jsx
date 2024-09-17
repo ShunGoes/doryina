@@ -46,13 +46,13 @@ const Experience = () => {
           <motion.h2 
             initial={{opacity: 0,  scale: 0.3}}
             whileInView={{opacity: 1,   scale: 1 }}
-            transition={{delay: 4, duration: 1, type: "spring", bounce: 0.6}}
+            transition={{ duration: 1, type: "spring", bounce: 0.6}}
             viewport={{ once: true }} 
             className="heading-2 md:text-start mb-3">Our Experience </motion.h2>
           <motion.p
           initial={{opacity: 0,  scale: 0.3}}
           whileInView={{opacity: 1,   scale: 1 }}
-          transition={{delay: 3, duration: 1, type: "spring", bounce: 0.6}}
+          transition={{ duration: 1, type: "spring", bounce: 0.6}}
           viewport={{ once: true }} 
           className="heading-2-paragragh md:text-start w-11/12 mx-auto md:mx-0 md:w-[78%] ">
             since inception we have always prioritize the convenience of our
@@ -61,7 +61,7 @@ const Experience = () => {
           <motion.div 
             initial={{opacity: 0,  scale: 0.3}}
             whileInView={{opacity: 1,   scale: 1 }}
-            transition={{delay: 2, duration: 1, type: "spring", bounce: 0.6}}
+            transition={{ duration: 1, type: "spring", bounce: 0.6}}
             viewport={{ once: true }} 
             className="grid grid-cols-3 place-items-center justify-between gap-[20px] w-10/12 md:w-[60%] md:mx-0 mx-auto   mt-[50px]">
             <div className="h-[90px] ">
