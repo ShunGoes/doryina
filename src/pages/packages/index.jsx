@@ -14,7 +14,7 @@ const Packages = () => {
       <Tailored />
       <GetInTouch />
       <FAQ />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

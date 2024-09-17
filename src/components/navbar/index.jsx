@@ -82,7 +82,7 @@ console.log(showHamburgerMenu);
               Packages
             </p>
           </Link>
-          <Link to="/" className="">
+          <Link to="/contact" className="">
             <p className="font-[400] text-[15px] leading-[25.2px] text-[#1E1E1ECC]">
               Contact us
             </p>
