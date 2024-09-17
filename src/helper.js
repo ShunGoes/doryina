@@ -1,8 +1,9 @@
 import {default as HeaderPeople} from "./assets/header-people.webp"
+import {default as HeaderPeopleSm} from "./assets/header-people-sm.webp"
 import {default as Logo} from "./assets/logo.svg"
-import {default as London} from "./assets/london.svg"
-import {default as Paris} from "./assets/paris.svg"
-import {default as Journey} from "./assets/journey.svg"
+import {default as London} from "./assets/london.webp"
+import {default as Paris} from "./assets/paris.webp"
+import {default as Journey} from "./assets/journey.webp"
 import {default as Hamburger} from "./assets/hamburger.svg"
 import {default as Arrow} from "./assets/arrow.svg"
 import {default as ArrowWhite} from "./assets/arrow-white.svg"
@@ -52,8 +53,8 @@ import {default as Cancel} from "./assets/cancel.svg"
 
 
 
-// done
 export default {
+    HeaderPeopleSm,
     Experience6,
     Cancel,
     Experience9,

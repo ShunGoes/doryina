@@ -9,7 +9,7 @@ const Footer = () => {
             <img src={helper.Dorinya} alt="dorinya logo"  className="md:h-[73.5px] "/>
           </div>
           <div className="flex flex-col gap-[100px]  md:w-full md:gap-[40px]">
-            <div className="w-10/12 mx-auto flex flex-col gap-[60px] md:gap-[10px] ">
+            <div className="w-10/12 mx-auto flex flex-col gap-[20px] md:gap-[10px] ">
               <div className="flex gap-[20px] md:w-full ">
                 <div className="">
                   <img
@@ -22,8 +22,8 @@ const Footer = () => {
                   No.27, Rumuagholu Road, Romokoro, Portharcourt. Rivers State.
                 </p>
               </div>
-              <div className="md:flex justify-between">
-                <div className="flex gap-[20px] md:w-[50%]">
+              <div className="md:flex justify-between ">
+                <div className="flex gap-[20px] md:w-[50%]  mb-5 md:mb-0">
                   <div className="">
                     <img src={helper.FooterPhone} alt="phone icon" />
                   </div>

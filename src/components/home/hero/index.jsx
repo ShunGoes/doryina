@@ -41,7 +41,8 @@ const HomeHero = () => {
               transition={{delay: 2.5, duration: 1, type: "spring", bounce: 0.6}}
               viewport={{ once: true }} 
               className="  mt-[50px] md:mt-[30px] md:w-[70%] w-11/12 mx-auto ">
-                <img src={helper.HeaderPeople} alt="people smiling"  className="w-full h-full object-cover"/>
+                <img src={helper.HeaderPeople} alt="people smiling"  className="w-full h-full object-cover hidden md:block"/>
+                <img src={helper.HeaderPeopleSm} alt="people smiling"  className="w-full h-full object-cover  md:hidden"/>
             </motion.div>
         </header>
     </section>

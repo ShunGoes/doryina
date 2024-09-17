@@ -1,24 +1,27 @@
-import './App.css'
-import AboutPage from './pages/about'
-import HomePage from './pages/home'
+import "./App.css";
 
-import {Routes, Route} from "react-router-dom"
-import Packages from './pages/packages'
+import { Routes, Route } from "react-router-dom";
 
-import ContactPage from './pages/contact'
+import { lazy, Suspense } from "react";
 
 function App() {
+  const HomePage = lazy(() => import("./pages/home"));
+  const Packages = lazy(() => import("./pages/packages"));
+  const AboutPage = lazy(() => import("./pages/about"));
+  const ContactPage = lazy(() => import("./pages/contact"));
 
   return (
-   <div>
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/packages' element={<Packages />} />
-        <Route path='/contact' element={<ContactPage />} />
-      </Routes>
-   </div>
-  )
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Suspense>
+    </div>
+  );
 }
 
-export default App
+export default App;

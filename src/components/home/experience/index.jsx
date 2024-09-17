@@ -101,7 +101,7 @@ const Experience = () => {
             {
               [...carousel1,...carousel1].map((picture,idx) => (
               <div key={idx}  className="w-[200px] h-[150px]  flex gap-[10px]" >
-                <img src={picture} alt="people happy" className="w-full h-full object-cover" />
+                <img src={picture} loading="lazy" alt="people happy" className="w-full h-full object-cover" />
               </div>
 
               ))
@@ -111,7 +111,7 @@ const Experience = () => {
             {
               [...carousel2,...carousel2].map((picture, idx) => (
               <div key={idx}  className="w-[200px] h-[150px]  flex gap-[10px]" >
-                <img src={picture} alt="people happy" className="w-full h-full object-cover" />
+                <img src={picture} loading="lazy" alt="people happy" className="w-full h-full object-cover" />
               </div>
 
               ))
@@ -121,7 +121,7 @@ const Experience = () => {
             {
               [...carousel3,...carousel3].map((picture, idx) => (
               <div key={idx} className="w-[200px] h-[150px]  flex gap-[10px]" >
-                <img src={picture} alt="people happy" className="w-full h-full object-cover" />
+                <img src={picture} loading="lazy" alt="people happy" className="w-full h-full object-cover" />
               </div>
 
               ))
