@@ -15,7 +15,7 @@ const AboutPage = () => {
         <Team />
         <Testimonial />
         <SubFooter />
-        <Footer />
+        {/* <Footer /> */}
     </main>
   )
 }

@@ -12,7 +12,7 @@ const ContactPage = () => {
     <ContactHero />
     <GetInTouch />
     <FAQ />
-    <Footer />
+    {/* <Footer /> */}
 </main>
   )
 }
