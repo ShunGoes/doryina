@@ -2,6 +2,7 @@ import CustomAccordion from "@/components/accordion-comp";
 import helper from "../../../helper";
 import "./style.css";
 import { useState } from "react";
+import axios from "axios";
 
 const GetInTouch = () => {
   const [formDAta, setFormData] = useState({
@@ -38,6 +39,9 @@ const GetInTouch = () => {
     },
   ];
 
+  const sendMail = () => {
+    axios.get()
+  }
   
 
   return (
@@ -121,7 +125,7 @@ const GetInTouch = () => {
             className="w-full h-[184px] p-4  rounded-[6px] bg-[#300D2B33] text-[20px] text-[#28282BCC] leading-[25.2px] focus:outline-none focus:border-blue-500 placeholder-[#28282BCC] placehoder-[20px] mb-[20px] mt-[10px]"
             placeholder="Type a message"
           ></textarea>
-          <button className="btn-colored px-[25px] md:px-[40px]">
+          <button onclick={sendMail} className="btn-colored px-[25px] md:px-[40px]">
             Send a message
           </button>
         </div>

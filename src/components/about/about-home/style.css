@@ -1,4 +1,5 @@
 .about-hero{
     background-image: url("../../../assets/about-hero.svg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
