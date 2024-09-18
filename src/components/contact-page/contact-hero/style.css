@@ -1,3 +1,5 @@
 .contact-hero{
     background-image: url("../../../assets/contact-hero.svg");
+    background-size: cover;
+    background-position: center;
 }

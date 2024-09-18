@@ -1,4 +1,5 @@
 .package-hero{
     background-image: url("../../../assets/package-hero.webp");
     background-size: cover;
+    background-position: center ;
 }
