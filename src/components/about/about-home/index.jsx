@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AboutHero = () => {
   return (
     <section className="about-hero h-[400px] md:h-screen flex justify-center items-center w-full">
-      <header className="backdrop-blur-sm md:backdrop-blur-0 md:w-6/12 py-[20px] px-[10px] w-full  md:h-1/3">
+      <header className=" md:backdrop-blur-0 md:w-6/12 py-[20px] px-[10px] w-full  md:h-1/3">
         <motion.h1
           initial={{ opacity: 0, scale: 0.3 }}
           animate={{ opacity: 1, scale: 1 }}
