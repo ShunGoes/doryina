@@ -28,15 +28,17 @@ const Testimonial = () => {
     autoplaySpeed: 0,
     cssEase: "linear",
     pauseOnHover: true,
+    swipeToSlide: true,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
       },
+    
       {
         breakpoint: 480,
         settings: {
@@ -48,20 +50,20 @@ const Testimonial = () => {
   };
   return (
     <div className="my-[60px]   overflow-hidden ">
-      <div className={` ${hideSection ? "h-auto" : "md:h-[90vh]"} `}>
+      <div className={` ${hideSection ? "h-auto" : " md:h-[70vh] lg:h-[90vh]"} `}>
         <motion.h2
            initial={{opacity: 0,  scale: 0.5}}
            whileInView={{opacity: 1,   scale: 1 }}
            transition={{delay: 2, duration: 1, type: "spring", bounce: 0.6}}
            viewport={{ once: true }} 
-          className="heading-2 mb-5 md:mb-[40px] ">
+          className="heading-2 mb-5 md:mb-[10px] lg:mb-[40px] ">
           Trusted by Thousands for a New Beginning
         </motion.h2>
         <div
           className={`  ${
             hideSection
               ? "hidden"
-              : "md:flex md:h-[80%] items-center md:w-[90%] md:mx-auto gap-[60px]"
+              : "md:flex md:h-auto lg:h-[80%]  items-center md:w-[90%] md:mx-auto gap-[60px]"
           } `}
         >
           <motion.div
@@ -82,7 +84,7 @@ const Testimonial = () => {
              transition={{delay: 1.3, duration: 1, type: "spring", bounce: 0.6}}
              viewport={{ once: true }} 
             className="md:w-[50%]">
-            <h2 className="heading-2 mt-[30px] md:text-start mb-3">
+            <h2 className="heading-2 mt-[30px] md:text-start mb-3 ">
               Real Stories, Real Success
             </h2>
             <p className="heading-2-paragragh w-10/12 mx-auto md:text-start md:mx-0">
@@ -94,10 +96,10 @@ const Testimonial = () => {
           </motion.div>
         </div>
       </div>
-      <div className="h-[70vh] md:h-[100vh]">
+      <div className="h-[70vh] md:h-auto lg:h-[100vh]  ">
         <Slider
           {...settings}
-          className="pl-[20px]  mt-[40px] w-full "
+          className="pl-[20px]  mt-[40px] md:mt-0 lg:mt-[40px] w-full "
         >
           {Testimoonials.map((testimony) => (
             <TestimonialCard key={testimony.id} {...testimony} />

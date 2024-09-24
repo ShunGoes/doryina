@@ -40,7 +40,6 @@ const Navbar = () => {
   } else {
     bgColor = "md:bg-white";
   }
-console.log(showHamburgerMenu);
 
   return (
     <motion.nav
@@ -48,7 +47,7 @@ console.log(showHamburgerMenu);
       animate={{ opacity: 1 }}
       transition={{ delay: 3, duration: 1 }}
       viewport={{ once: true }}
-      className={`w-full bg-transparent md:w-9/12 lg:mx-auto md:rounded-[40px] md:backdrop-blur-md ${bgColor} md:h-[60px] md:fixed md:right-0 md:left-0 md:top-[30px] relative nav-shadow z-[999]`}
+      className={`w-full bg-transparent md:w-9/12 md:mx-auto md:rounded-[40px] md:backdrop-blur-md ${bgColor} md:h-[60px] md:fixed md:right-0 md:left-0 md:top-[30px] relative nav-shadow z-[999]`}
     >
       <div className="w-[95%] mx-auto h-[70px]  flex justify-between items-center md:h-full md:w-[90%] ">
         <Link
@@ -63,7 +62,7 @@ console.log(showHamburgerMenu);
         </Link>
         <div
           
-          className=" md:hidden"
+          className="cursor-pointer md:hidden"
         >
           {
             showHamburgerMenu ? 

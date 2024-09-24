@@ -32,7 +32,7 @@ p{
     @apply rounded-[8px] bg-[#962985] border border-[#4F4F4F] py-[6px]  font-[600] text-[16px] text-[#FBECDC]
 }
 .btn-plain{
-    @apply rounded-[8px] bg-transparent border border-[#962985] py-[6px] px-[4px] font-[600] text-[16px] text-[#962985] h-[40px] 
+    @apply rounded-[8px] bg-transparent border border-[#962985] py-[6px]  font-[600] text-[16px] text-[#962985]  
 }
 @layer base {
   :root {

@@ -3,12 +3,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import helper from "@/helper";
+import { useNavigate } from "react-router-dom";
 
 
 const Experience = () => {
   const carousel1 = [helper.Experience1, helper.Experience2, helper.Experience3]
   const carousel2 = [helper.Experience4, helper.Experience5, helper.Experience6]
   const carousel3 = [helper.Experience7, helper.Experience8, helper.Experience9]
+
+  const navigate = useNavigate()
+  
+  const goToABout = () => {
+    navigate("/about")
+  }
 
   const settings = {
     dots: false,
@@ -90,7 +97,7 @@ const Experience = () => {
             </div>
           </motion.div>
           <div className="flex justify-center md:justify-start">
-            <button className="btn-colored mt-[40px] w-4/12 md:w-[20%]">
+            <button onClick={goToABout} className="btn-colored mt-[40px] w-4/12 lg::w-[20%]">
               Get started{" "}
             </button>
           </div>
