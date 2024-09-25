@@ -67,7 +67,7 @@ const GetInTouch = () => {
       return
     } else {
       // Proceed with form submission logic (e.g., API call)
-      setErrors({});
+      
     }    
 
     setStatus({
@@ -78,7 +78,7 @@ const GetInTouch = () => {
     });
 
     try {
-      const response = await axios.post("http://localhost:5000/sendmai", {
+      const response = await axios.post("https://doryina-backend.onrender.com", {
         travelOptions,
         name,
         email,
