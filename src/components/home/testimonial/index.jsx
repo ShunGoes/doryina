@@ -9,7 +9,7 @@ import Slider from "react-slick/lib/slider";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-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
+
 const Testimonial = () => {
   const location = useLocation();
   let hideSection = false;
