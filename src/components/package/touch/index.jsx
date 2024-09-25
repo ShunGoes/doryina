@@ -78,7 +78,7 @@ const GetInTouch = () => {
     });
 
     try {
-      const response = await axios.post("https://doryina-backend.onrender.com", {
+      const response = await axios.post("https://doryina-backend.onrender.com/sendMail", {
         travelOptions,
         name,
         email,
