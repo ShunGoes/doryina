@@ -56,7 +56,7 @@ const Testimonial = () => {
            whileInView={{opacity: 1,   scale: 1 }}
            transition={{delay: 2, duration: 1, type: "spring", bounce: 0.6}}
            viewport={{ once: true }} 
-          className="heading-2 mb-5 md:mb-[10px] lg:mb-[40px] ">
+          className="heading-2 w-9/12 mx-auto md:mx-0 md:w-auto mb-5 md:mb-[10px] lg:mb-[40px] ">
           Trusted by Thousands for a New Beginning
         </motion.h2>
         <div

@@ -118,7 +118,7 @@ const GetInTouch = () => {
       <div className="w-[95%] py-[20px] h-full flex flex-col gap-y-[40px] md:gap-y-[50px]  mx-auto  ">
         <div>
           <h2 className="heading-2 mb-3">Get in Touch with Us</h2>
-          <p className="heading-2-paragragph text-center md:w-8/12 lg:w-6/12 md:mx-auto">
+          <p className="heading-2-paragragph px-[10px] text-center md:w-8/12 lg:w-6/12 md:mx-auto">
             Have questions or need more information? Fill out the form below,
             and our team will get back to you promptly.
           </p>

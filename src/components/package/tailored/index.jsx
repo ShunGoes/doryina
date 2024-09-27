@@ -21,7 +21,7 @@ const Tailored = () => {
             us to deliver unmatched service and set new industry standards.
           </p>
         </motion.div>
-        <div className="flex flex-col gap-y-[20px] md:flex-row md:w-11/12 md:mx-auto md:gap-x-[20px] ">
+        <div className="flex items-center  flex-col gap-y-[20px] md:flex-row md:w-11/12 md:mx-auto md:gap-x-[20px] ">
           <motion.div
             initial={{ opacity: 0, scale: 0.3 }}
             whileInView={{ opacity: 1, scale: 1 }}

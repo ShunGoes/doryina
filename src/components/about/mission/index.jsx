@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import helper from "../../../helper";
 import { motion } from "framer-motion";
 const Mission = () => {
@@ -32,7 +33,7 @@ const Mission = () => {
         </div>
 
         <div className="md:w-11/12 md:mt-[40px] w-[90%]  mx-auto flex flex-col md:flex-row-reverse lg:gap-[200px]  gap-[30px]">
-          <div className="md:w-1/2 h-[250px] md:flex  justify-center items-center md:rounded-[20px">
+          <div className="md:w-1/2 h-[250px] md:h-[380px] md:flex  justify-center items-center md:rounded-[20px">
             <img
               src={helper.Mission1}
               alt="our mission picture"
@@ -53,7 +54,7 @@ const Mission = () => {
               viewport={{ once: true }}
             >
               <h3 className="heading-3 mb-2"> Vision</h3>
-              <p className="font-[400] text-[12px] md:text-[14px] md:leading-[25px] lg:leading-[30px] lg:text-[16px]  leading-[18px] text-[#333333CC]">
+              <p className="font-[400] text-[13px] md:text-[14px] md:leading-[25px] lg:leading-[30px] lg:text-[16px]  leading-[18px] text-[#333333CC]">
                 To be the leading provider of exceptional services, known for
                 our unwavering commitment to excellence, integrity, and customer
                 satisfaction.
@@ -71,7 +72,7 @@ const Mission = () => {
               viewport={{ once: true }}
             >
               <h3 className="heading-3 mb-2"> Mission</h3>
-              <p className="font-[400] text-[12px] lg:text-[16px] md:text-[14px] leading-[18px] text-[#333333CC] md:leading-[25px] lg:leading-[30px]">
+              <p className="font-[400] text-[13px] lg:text-[16px] md:text-[14px] leading-[18px] text-[#333333CC] md:leading-[25px] lg:leading-[30px]">
                 Since our official licensing in 2020, Doryina Enterprise has
                 been dedicated to delivering the highest quality in every aspect
                 of our business. Whether in general contracting, procurement,
@@ -84,9 +85,9 @@ const Mission = () => {
         </div>
 
         <div className="w-full flex justify-center mt-0 md:mt-[40px] mx-auto">
-          <button className="btn-colored w-5/12 md:w-auto md:px-[20px] ">
+          <Link to="/contact" className="btn-colored w-5/12 text-center md:w-auto md:px-[20px] ">
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </section>

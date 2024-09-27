@@ -1,5 +1,6 @@
 import React from "react";
 import helper from "../../helper";
+import { Link } from "react-router-dom";
 
 const SubFooter = () => {
   return (
@@ -8,9 +9,11 @@ const SubFooter = () => {
         Relocate with Doryina for a Seamless Experience
       </h2>
       <div className="w-8/12 mx-auto  h-[110px] relative md:flex justify-center md:w-4/12 md:h-[50px] lg::h-[70px] ">
-        <button className="btn-colored w-full md:w-[70%] lg:w-[50%]">
+      <Link to="/packages" className="md:w-full md:flex justify-center items-center ">
+        <button className=" w-full btn-colored md:w-[70%]  lg:w-[50%]">
           Explore our packages
-        </button>
+        </button>     
+      </Link>
         <img
           src={helper.ArrowWhite}
           alt="arrow button"
