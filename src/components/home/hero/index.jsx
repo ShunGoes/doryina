@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 const HomeHero = () => {
     
   return (
-    <section className=" h-auto mb-[60px] md:mb-0 w-full header  ">
+    <section className=" h-auto mb-[30px] md:mb-0 w-full header  ">
         <header className="header-gradient h-full flex flex-col  gap-[20px]">
             <div className="h-[40px] md:h-[120px]"/>
             <motion.h1
@@ -15,7 +15,7 @@ const HomeHero = () => {
               animate={{opacity: 1,   scale: 1 }}
               transition={{delay: 1, duration: 1, type: "spring", bounce: 0.6}}
               viewport={{ once: true }} 
-              className="heading-1 md:9/12 lg::w-7/12 md:mx-auto text-[#28282B] px-[10px]">Seamless <span className="text-[#962985]">Pathways </span> to Study Work and <span className="text-[#962985]"> Live Abroad </span> </motion.h1>
+              className="heading-1 md:9/12 lg:w-7/12 md:mx-auto text-[#28282B] px-[10px]">Seamless <span className="text-[#962985]">Pathways </span> to Study Work and <span className="text-[#962985]"> Live Abroad </span> </motion.h1>
             <motion.p 
               initial={{opacity: 0,  scale: 0.3}}
               animate={{opacity: 1,   scale: 1 }}
@@ -38,7 +38,7 @@ const HomeHero = () => {
               animate={{opacity: 1,   scale: 1 }}
               transition={{delay: 2.5, duration: 1, type: "spring", bounce: 0.6}}
               viewport={{ once: true }} 
-              className="  mt-[50px] md:mt-[30px] md:w-[70%] w-11/12 mx-auto ">
+              className="  mt-[20px] md:mt-[30px] md:w-[70%] w-11/12 mx-auto ">
                 <img src={helper.HeaderPeople} alt="people smiling"  className="w-full h-full object-cover hidden md:block"/>
                 <img src={helper.HeaderPeopleSm} alt="people smiling"  className="w-full h-full object-cover  md:hidden"/>
             </motion.div>

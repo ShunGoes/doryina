@@ -13,8 +13,8 @@ const Card = ({image, title, text, id}) => {
             <img src={image} alt={title} className="w-full " />
         </div>
         <div className="py-3 px-3 mt-1">
-            <h4 className="font-[500] text-[20.66px] md:text-[22px] leading-[20.66px] md:leading-[22px] text-[#333333CC] mb-2">{title} </h4>
-            <p className="text-[#33333399] md:leading-[20px] leading-[18.78px] text-[16px] font-[400]">{text}</p>
+            <h4 className="font-[700] text-[20.66px] md:text-[17px] lg:text-[20px] leading-[20.66px] md:leading-[22px] text-[#333333CC] mb-2">{title} </h4>
+            <p className="text-[#33333399]  leading-[20px] text-[16px] md:text-[14px] font-[700]">{text}</p>
         </div>
     </motion.div>
   )

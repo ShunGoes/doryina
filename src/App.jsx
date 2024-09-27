@@ -3,6 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 import { lazy, Suspense } from "react";
+import Loading from "./components/loading";
 
 function App() {
   const HomePage = lazy(() => import("./pages/home"));
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

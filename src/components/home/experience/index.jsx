@@ -47,21 +47,21 @@ const Experience = () => {
   }
 
   return (
-    <div className="bg-[#F9F2F8] py-[60px]">
-      <div className="md:flex md:w-11/12 md:mx-auto  md:h-[80vh]">
-        <div className="md:w-[50%]  md:flex flex-col justify-center">
+    <div className="bg-[#F9F2F8] py-[20px] md:py-[60px]">
+      <div className="md:flex md:w-11/12 md:mx-auto md:h-[80vh]">
+        <div className="md:w-[50%]   md:flex flex-col justify-center">
           <motion.h2 
             initial={{opacity: 0,  scale: 0.3}}
             whileInView={{opacity: 1,   scale: 1 }}
             transition={{ duration: 1, type: "spring", bounce: 0.6}}
             viewport={{ once: true }} 
-            className="heading-2 md:text-start mb-3">Our Experience </motion.h2>
+            className="heading-2 md:text-start ">Our Experience </motion.h2>
           <motion.p
           initial={{opacity: 0,  scale: 0.3}}
           whileInView={{opacity: 1,   scale: 1 }}
           transition={{ duration: 1, type: "spring", bounce: 0.6}}
           viewport={{ once: true }} 
-          className="heading-2-paragragh md:text-start w-11/12 mx-auto md:mx-0 md:w-[78%] ">
+          className="heading-2-paragragh md:text-start w-full px-[10px] mx-auto md:mx-0 md:w-[78%] ">
             since inception we have always prioritize the convenience of our
             clients by providing low prices and easy processes
           </motion.p>

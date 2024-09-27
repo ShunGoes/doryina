@@ -32,7 +32,7 @@ const Modal = ({ closeModal, openModal, error, message }) => {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="fixed inset-0 backdrop-blur-[2px] flex justify-center items-center h-screen"
+          className="fixed inset-0 backdrop-blur-[2px] flex justify-center items-center h-screen z-[1000]"
         >
           <div className="size-[70%] bg-white rounded-[10px] relative">
             <div

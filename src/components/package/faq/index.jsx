@@ -28,7 +28,7 @@ const FAQ = () => {
       <div className="w-[95%] py-[50px] h-full flex flex-col gap-y-[40px] md:gap-y-[50px]  mx-auto  ">
         <div>
           <h2 className="heading-2 mb-3">FAQ</h2>
-          <p className="heading-2-paragragph text-center md:w-6/12 md:mx-auto">
+          <p className="heading-2-paragragph text-center lg:w-6/12 md:w-8/12 md:mx-auto">
             Got questions about our packages? We’ve got answers. Explore our
             most commonly asked questions below.
           </p>

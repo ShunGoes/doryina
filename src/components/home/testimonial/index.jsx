@@ -49,7 +49,7 @@ const Testimonial = () => {
     ],
   };
   return (
-    <div className="my-[60px]   overflow-hidden ">
+    <div className="my-[60px] md:my-0   overflow-hidden ">
       <div className={` ${hideSection ? "h-auto" : " md:h-[70vh] lg:h-[90vh]"} `}>
         <motion.h2
            initial={{opacity: 0,  scale: 0.5}}
@@ -63,7 +63,7 @@ const Testimonial = () => {
           className={`  ${
             hideSection
               ? "hidden"
-              : "md:flex md:h-auto lg:h-[80%]  items-center md:w-[90%] md:mx-auto gap-[60px]"
+              : "md:flex md:h-auto lg:h-[80%]  items-center md:w-[90%]   mt-2 md:mt-0 md:mx-auto gap-[60px]"
           } `}
         >
           <motion.div
@@ -87,7 +87,7 @@ const Testimonial = () => {
             <h2 className="heading-2 mt-[30px] md:text-start mb-3 ">
               Real Stories, Real Success
             </h2>
-            <p className="heading-2-paragragh w-10/12 mx-auto md:text-start md:mx-0">
+            <p className="heading-2-paragragh w-11/12 md:w-10/12 mx-auto md:text-start md:mx-0">
               At Doryina, every successful relocation is a testament to our
               commitment and expertise. Hear from our clients who have turned
               their dreams into reality with our seamless support. These stories
@@ -96,10 +96,10 @@ const Testimonial = () => {
           </motion.div>
         </div>
       </div>
-      <div className="h-[70vh] md:h-auto lg:h-[100vh]  ">
+      <div className="h-[70vh] md:h-auto  lg:h-[100vh]  ">
         <Slider
           {...settings}
-          className="pl-[20px]  mt-[40px] md:mt-0 lg:mt-[40px] w-full "
+          className="pl-[20px]  md:h-[120vh] lg:h-auto  mt-[40px] md:mt-0 lg:mt-[40px] w-full "
         >
           {Testimoonials.map((testimony) => (
             <TestimonialCard key={testimony.id} {...testimony} />

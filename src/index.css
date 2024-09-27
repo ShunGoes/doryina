@@ -17,16 +17,16 @@ p{
     @apply font-[700] text-[32px] md:text-[46px] leading-[30px] md:leading-[50px]  text-center
 }
 .heading-2{
-    @apply font-[700] text-[24px] md:text-[32px] leading-[26.4px] md:leading-[35.2px] text-center text-[#28282B]
+    @apply font-[700] text-[20px] mb-1 md:mb-3 md:text-[25px] lg:text-[32px] leading-[22px] lg:leading-[35.2px] text-center text-[#28282B]
 }
 .heading-3{
-    @apply font-[700] text-[26px] leading-[22px] text-[#333333]
+    @apply font-[700] text-[16px] leading-[22px] text-[#333333] md:text-[17px]
 }
 .heading-paragraph{
-    @apply font-[400] text-[14px]  md:text-[16px] leading-[20px] md:leading-[25.2px]  text-center
+    @apply font-[400] text-[14px]  md:text-[20px] leading-[18px] md:leading-[25.2px]  text-center
 }
 .heading-2-paragragh{
-    @apply font-[700] md:font-[400] text-[16px] md:leading-[20px] leading-[25.2px] text-center text-[#28282BCC]
+    @apply font-[700] md:font-[400] text-[14px] md:leading-[20px] leading-[18px] text-center text-[#28282BCC]
 }
 .btn-colored{
     @apply rounded-[8px] bg-[#962985] border border-[#4F4F4F] py-[6px]  font-[600] text-[16px] text-[#FBECDC]

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const PackageHero = () => {
   return (
     <section className="package-hero h-[400px] md:h-screen flex justify-center items-center w-full">
-        <header className=" md:backdrop-blur-0 md:w-7/12 py-[20px] px-[10px] w-full  md:h-1/3">
+        <header className=" md:backdrop-blur-0 lg:w-7/12 md:w-11/12  py-[20px] px-[10px] w-full  md:h-1/3">
             <motion.h1
              initial={{opacity: 0,  scale: 0.3}}
              whileInView={{opacity: 1,   scale: 1 }}

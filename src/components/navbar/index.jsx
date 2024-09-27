@@ -102,7 +102,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
             transition={{ when: "beforeChildren", staggerChildren: 0.3 }}
-            className="absolute top-[80px] bg-[#EBD6E8] backdrop-blur-sm right-3  py-[60px] rounded-[10px] overflow-hidden w-[70%] "
+            className="absolute top-[80px] bg-[#EBD6E8] backdrop-blur-sm right-3  py-[60px] rounded-[10px] overflow-hidden w-full "
           >
             <div className="h-full flex flex-col justify-center items-center  w-full">
               {appLinks.map((links, idx) => (
