@@ -43,7 +43,7 @@ const Team = () => {
              viewport={{ once: true }}
             >
               <h3 className="heading-3 mb-2"> Meet Our Leadership and Team</h3>
-              <p className="font-[400] text-[12px] md:text-[14px] lg:text-[16px] leading-[18px] text-[#333333CC]">
+              <p className="font-[400] text-[13px] md:text-[14px] lg:text-[16px] leading-[18px] text-[#333333CC]">
                 Doryina Enterprise is spearheaded by our founder, Engr.
                 Oyinbrakemi J. Nabena, affectionately known as “PJ,” along with
                 a team of dedicated and highly skilled professionals. Together,
