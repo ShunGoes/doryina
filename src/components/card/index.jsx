@@ -8,7 +8,7 @@ const Card = ({image, title, text, id}) => {
     whileInView={{opacity: 1,   scale: 1 }}
     transition={{delay:  id * 0.5, duration: 1, type: "spring", bounce: 0.6}}
     viewport={{ once: true }} 
-      className='w-11/12  mx-auto flex flex-col my-[30px] rounded-[20px]  bg-[#FEEEFB80] shadow shadow-[#96298514] overflow-hidden'>
+      className='w-11/12  mx-auto flex flex-col my-[30px] rounded-[20px]  bg-[#F8F8FA] shadow shadow-[#96298514] overflow-hidden'>
         <div className="w-full">
             <img src={image} alt={title} className="w-full " />
         </div>
