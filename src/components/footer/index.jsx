@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between w-11/12 mx-auto md:w-10/12 md:gap-[25px] md:justify-start">
+            <div className="flex items-center md:items-start justify-between w-11/12 mx-auto md:w-10/12 md:gap-[25px] md:justify-start">
               <span className="text-[14px] font-[500] leading-[20px] text-[#300D2B]">Social Media</span>
               <img src={helper.FooterFb} alt="facebook icon" />
               <img src={helper.FooterX} alt="twitter icon" />

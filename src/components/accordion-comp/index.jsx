@@ -20,7 +20,7 @@ const CustomAccordion = ({ question, children }) => {
           <AccordionTrigger className="text-[14px]  h-[70px] font-[400] leading-[18px] text-white px-[10px] text-start md:text-[17px] lg:text-[22px] md:leading-[18px] md:px-[30px]">
             {question}
           </AccordionTrigger>
-          <AccordionContent>{children}</AccordionContent>
+          <AccordionContent className="px-[10px] md:px-[30px]">{children}</AccordionContent>
         </AccordionItem>
       </Accordion>
     </motion.div>
