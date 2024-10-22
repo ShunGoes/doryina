@@ -27,7 +27,7 @@ const Team = () => {
            whileInView={{opacity: 1,   x: 0 }}
            transition={{delay: 1, duration: 1, type: "spring", bounce: 0.6}}
            viewport={{ once: true }}
-          className="md:w-1/2 h-[250px] md:flex justify-center items-center md:rounded-[20px">
+          className="md:w-1/2 h-[250px] md:h-auto md:flex justify-center items-center md:rounded-[20px">
             <img
               src={helper.Mission2}
               alt="our mission picture"
