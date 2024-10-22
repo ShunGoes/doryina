@@ -19,7 +19,7 @@ const AboutHero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.5, duration: 1, type: "spring", bounce: 0.6 }}
           viewport={{ once: true }}
-          className="heading-paragraph text-[#fff]"
+          className="heading-paragraph text-[#fff] px-2"
         >
           At Doryina, we specialize in turning your dreams of moving abroad into
           reality. With expert guidance, personalized service, and a commitment

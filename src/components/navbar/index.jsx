@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="hidden md:flex gap-4 ">
           <Link to="/about" className="">
             <p className="font-[400] text-[15px] leading-[25.2px] text-[#1E1E1ECC]">
-              About uS
+              About us
             </p>
           </Link>
           <Link to="/packages" className="">
